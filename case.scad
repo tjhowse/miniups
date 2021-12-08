@@ -1,5 +1,5 @@
-batt_holder_xy = 20;
-batt_holder_z = 70;
+batt_holder_xy = 21.5;
+batt_holder_z = 78;
 bms_x = 5;
 wt = 2;
 $fn = 24;
@@ -40,7 +40,7 @@ module align_post() {
 module lid() {
     difference () {
         case_whole();
-        translate([0,0,50]) cube([100,100,100], center=true);
+        translate([0,0,51]) cube([100,100,100], center=true);
         translate([batt_holder_xy/2,batt_holder_xy/2,-50]) cylinder(r=screw_hole_r,h=100);
         translate([batt_holder_xy/2,-bms_x/2,-50]) cylinder(r=wire_hole_r,h=100);
     }
